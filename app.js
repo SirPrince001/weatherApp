@@ -2,7 +2,7 @@ function loadWeather() {
   let city = document.getElementById("cityId").value;
 
   const xmlHttp = new XMLHttpRequest();
-  xmlHttp.open( "GET",`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a12e009fe0ae061ecac351eb2dcb7dcd`);
+  xmlHttp.open( "GET",`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=a12e009fe0ae061ecac351eb2dcb7dcd`);
   xmlHttp.send();
 
   xmlHttp.onreadystatechange = (event) => {
